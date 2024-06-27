@@ -1,0 +1,92 @@
+*   {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+/*
+Esto es un comentario en CSS
+*/
+header  {
+    position: relative;
+    font-size: 150%;
+    width: 100%;
+    background-color: rgb(155, 193, 193);
+    position: fixed;
+}
+h1      {
+    padding-top: 5%;
+    text-align: center;
+}
+
+nav     {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.boton  {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+button  {
+    padding: 10px 20px;
+}
+
+main    {
+    padding-top: 130px;
+    background-color: aquamarine;
+}
+p       {
+    font-size:larger;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+table, td, th   {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+a       {
+    text-decoration: none;
+}
+
+form    {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea elementos horizontalmente */
+}
+
+footer  {
+    border-top: 3px solid black;
+    background-color: rgb(117, 108, 108);
+}
+
+.ImgFooter {
+    margin-left: 20px;
+    margin-right: 40%;
+}
+
+
+
+
+/*
+        Debe crear en HTML la estructura completa estableciendo sus secciones y jerarquias de un Sitio Web para un
+        cliente que requiere un sitio Web, constituido por tres paginas web, luego debera darle el estilo.
+        
+        La pagina web de Inicio debe contener la informacion general y especifica de la empresa
+        (Nombre, descripcion, imagenes ubicacion, etc.)
+
+        La siguiente Pagina Web debe contener una tabla con tres columnas, encabezdo y dos filas. 
+        Y el acceso a las redes sociales de la empresa.
+
+        La tercera pagina web debe contener un titulo, una descripcion y un formulario de consulta con cuatro campos
+        (Apellidos, Nombres, Email y comentario donde realiza la consulta), cada campo con los atributos necesarios y un
+        boton de enviar o entregar (submit).
+
+        Las paginas tienen que estar vinculadas entre si de forma que la o el usuario pueda navegar entre las paginas web
+        En alguna de ellas es necesario usar un identificador en el elemento que crea mas conveniente y en todas debe estar
+        el acceso a las redes sociales de la empresa
+*/ 
