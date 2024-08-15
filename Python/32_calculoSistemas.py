@@ -1,25 +1,31 @@
 print("Inicio")
-
-voltaje = int(input("Ingrese Volaje: "))
-resistencias = []
-resistenciasParalelos = []
-
-CantidadResistencias = int(input("Ingrese la cantidad de resistencias que se encuentran: "))
 while True:
-    i = 0
+    voltaje = int(input("Ingrese Volaje: "))
+    resistenciasSerie = []
+    resistenciasParalelos = []
 
-    serieParalelo = input("Su resistencia es en serie o paralelo: ")
-    if serieParalelo == 'serie':
-        resistencia = int(input(f"Resistencia {i+1}: \n"))
-        resistencias.append(resistencia)
-    elif serieParalelo == 'paralelo':
-        CuantasResistenciasP = int(input("Cuantas resistencias en paralelo"))
-        for j in range(CuantasResistenciasP):
-            resistencia = int(input(f"Resistencia {j+1}: \n"))
-            calculoResistenciaparalelo = 
-    else:
-        print("mal ingresado")
-        exit()
+    CantidadResistencias = int(input("Ingrese la cantidad de resistencias que se encuentran: "))
+    for i in range(CantidadResistencias):
+        serieParalelo = input("Su resistencia es en serie o paralelo: ")
+        if serieParalelo == 'serie':
+            resistencia = int(input(f"Resistencia {i+1}: \n"))
+            resistenciasSerie.append(resistencia)
+        elif serieParalelo == 'paralelo':
+            resistencia = int(input(f"Resistencia {i+1}: \n"))
+            calculoResistenciaparalelo = 1/resistencia
+            resistenciasParalelos.append(calculoResistenciaparalelo)
+            print("La resistencia total paralelo es", sum(resistenciasParalelos))
+        else:
+            print("mal ingresado")
+            exit()
+    if len(resistenciasParalelos) == 1:
+        print("Error, para ser paralelo deben haber 2 resistencias minimo")
+
+    resistenciaTotal = sum(resistenciasSerie) + sum(resistenciasParalelos)
+    print("Resistencia Total= ", resistenciaTotal)
+
+    IntensidadTotal = voltaje / resistenciaTotal
+    print("Intensidad Total= ", IntensidadTotal)
 
 
 
