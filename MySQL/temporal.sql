@@ -57,6 +57,7 @@ SELECT * FROM usu;
 
 SELECT * FROM usu WHERE id = 3;
 	-- Sirve para ver los elementos de la tabla 'usu', donde el id sea 3 exclusivamente
+	-- Sirve para ver los elementos de la tabla 'usu', donde se cumpla x condicion
 
 SELECT * FROM usu WHERE  usuario = 'MATE' AND contraseña = 'pepeortiva' OR usuario = 'SEBA';
 	-- Sirve para ver los elementos de la tabla 'usu' donde el usuario 'MATE' Y (condicion) su contraseña sea 'pepeortiva'

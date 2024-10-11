@@ -1,32 +1,15 @@
 print("Inicio")
+i = 0
 
-numeroPrimo = int(input("Ingrese el numero para comprobar"))
-
-'''
-for i in range(numeroPrimo):
+def es_primo(num):
+                #Empieza a iterar siempre desde el dos hasta num(i)
+    for n in range(2, num):
+        if num % n == 0:
+            return False
+    print(f"Es primo: {num}")
+while True:
     i = i + 1
-    print("El ciclo de iteracion es, ", i)
-    if numeroPrimo % i:
-        print("No se divide por ", i)
-    elif numeroPrimo % i == 0:
-        print("Es")
-    else:
-        print("Se divide por ", i)
-'''
-x = 1
-i = 1
-for x in range(numeroPrimo):
-    x = x + 1
-    print("x es igual a ", x)
-    print("i es ", i)
-    print(f"{numeroPrimo} % {i} = ", numeroPrimoxi)
-    if numeroPrimo % x == 0:
-        i += 1
-        print(f"{numeroPrimo} % {i} = ", numeroPrimo%i)
+    es_primo(i)
 
-if i == 2:
-    print("es")
-else:
-    print("no es")
 
 print("Fin")
